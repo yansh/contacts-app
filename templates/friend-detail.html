@@ -1,0 +1,55 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+
+<ion-view title="{{contact.fn}} {{contact.last}}">
+  <ion-content has-header="true" padding="true">
+      <div class="list">
+
+          <a class="item item-thumbnail-left">
+              <img ng-src="pics/{{contact.image}}" ng-if="fromContacts(contact.image)==false"/>
+              <img ng-src="{{contact.image}}" ng-if="fromContacts(contact.image)==true" />
+              <h2>{{contact.fn}} {{contact.last}}</h2>
+              <h4>{{contact.title}}</h4>
+          </a>
+
+      </div>
+
+      <div class="list card">
+
+          <a href="#" class="item item-icon-left">
+              <i class="icon ion-home"></i>
+              Cambridge, England
+          </a>
+
+          <a  href="#"  ng-click=openUrl("mailto://{{contact.email}}")   class="item item-icon-left" ng-show="contact.email">
+              <i class="icon ion-email"></i>
+              {{contact.email}}
+          </a>
+          <a  href="#" class="item item-icon-left" ng-show="contact.officePhone">
+              <i class="icon ion-ios7-telephone"></i>
+              {{contact.officePhone}}
+          </a>
+
+          <a href="#" class="item item-icon-left">
+              <i class="icon ion-wifi"></i>
+              MyDNS server
+          </a>
+
+          <a href="#" class="item item-icon-left">
+              <i class="icon ion-card"></i>
+              23233 2323 23332 2323
+          </a>
+
+
+          <a ng-show="contact.twitterId" href="#" ng-click=openUrl("https://twitter.com/{{contact.twitterId}}"); class="item item-icon-left">
+              <i class="icon ion-social-twitter"></i>
+              {{contact.twitterId}}
+          </a>
+
+      </div>
+  </ion-content>
+</ion-view>

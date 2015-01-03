@@ -1,0 +1,25 @@
+<div class="topcoat-navigation-bar">
+    <div class="topcoat-navigation-bar__item left quarter">
+        <a class="topcoat-icon-button--quiet back-button" href="" ng-click="back()">
+            <span class="topcoat-icon topcoat-icon--back"></span>
+        </a>
+    </div>
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">Contact</h1>
+    </div>
+    <div class="topcoat-navigation-bar__item right quarter">
+        <a class="topcoat-icon-button--quiet icon-settings" href="" ng-click="go('/settings')">
+            <span class="topcoat-icon  icon-settings"></span>
+        </a>
+    </div>
+</div>
+<div class='settings'>
+    <div ng-controller="ContactListCtrl" class="container">
+        <h1>Select text file</h1>
+        <input type="file" on-read-file="showContent($fileContent)" />
+        <div ng-if="content">
+            <h2>File content is:</h2>
+            <pre>{{ content }}</pre>
+        </div>
+    </div>
+</div>

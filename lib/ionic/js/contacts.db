@@ -1,0 +1,47 @@
+        {(a,fn,Jon,contacts)
+        (a,last,Crowcroft,contacts)
+        (a,email,jon.crowcroft@cl.cam.ac.uk,contacts)
+        (a,twitter,@tforcworc,contacts)
+        (a,mobile, 617-000-1231,contacts)
+        (a,title,Professor,contacts)
+        (a,image,jon.jpg, contacts)
+        (a,knows,c,contacts)
+        (a,knows,d,contacts)
+        (a,knows,e,contacts)}
+
+               
+        {(b,fn,Amir, contacts)
+        (b,last,Chaudhry,contacts)
+        (b,email,amir.chaudhry@cl.cam.ac.uk,contacts)
+        (b,twitter,@amirmc,contacts)
+        (b,image,amir.jpg, contacts)
+        (b,title,Postdoc,contacts)
+        (b,knows,a,contacts)
+        (b,knows,c,contacts)
+        (b,knows,d,contacts)}
+
+        {(c,fn,Anil, contacts)
+        (c,last,Madhavapeddy, contacts)
+        (c,email,anil@recoil.org,contacts)
+        (c,twitter,@avsm,contacts),
+        (c,image,anil.jpg, contacts)
+        (c,email,anil.madhavapeddy@recoil.org,contacts)
+        (c,title,Lecturer,contacts)}
+
+        {(d,fn,Carlos, contacts)
+        (d,last,Molina-jimenez, contacts)
+        (d,email,cm770@cam.ac.uk,contacts)
+        (d,twitter,@carlos,contacts)
+        (d,title,Postdoc,contacts)
+        (d,knows,a,contacts)
+        (d,knows,c,contacts)}
+
+        {(e,fn,Richard,contacts)
+        (e,last,Mortier,contacts)
+        (e,email,richard.mortier@nottingham.ac.uk,contacts)
+        (e,twitter,@mort__,contacts)        
+        (e,title,Lecturer,contacts)
+        (e,knows,c,contacts)
+        (e,knows,d,contacts)
+        }
+  

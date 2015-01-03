@@ -1,0 +1,16 @@
+<ion-view title="Contacts">
+  <ion-content>
+      <button class="button" ng-click="pickContact()">Add Contact</button>
+      <div class="list">
+          <a ng-repeat="contact in mycontacts "
+             href="#/tab/contacts/{{contact.id}}"
+             class="item item-thumbnail-left">
+              <img ng-src="pics/{{contact.image}}" ng-if="fromContacts(contact.image)==false"/>
+              <img ng-src="{{contact.image}}" ng-if="fromContacts(contact.image)==true" />
+              <h2>{{contact.fn}} {{contact.last}}</h2>
+              <h4>{{contact.title}}</h4>
+          </a>
+      </div>
+  </ion-content>
+</ion-view>
+
